@@ -16,7 +16,7 @@ if %errorlevel% == 0 ( goto :end )
 echo.	>>%systemdrive%\bitlockerstatus.log 2>&1
 echo Waiting for bit locker encryption to complete....	>>%systemdrive%\bitlockerstatus.log 2>&1
 echo started @ %DATE% %TIME%	>>%systemdrive%\bitlockerstatus.log 2>&1
-%windir%\system32\sectask.exe -waitencryptcomplete:1800	>nul 2>&1
+start /wait %windir%\system32\sectask.exe -waitencryptcomplete:1800	>nul 2>&1
 
 if %errorlevel% == 0 (
 	reg add HKLM\Software\IoT /v DeviceGuardBitlockerEncryptionComplete /t REG_DWORD /d 1 /f >nul 2>&1
