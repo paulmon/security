@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SiPolicy xmlns="urn:schemas-microsoft-com:sipolicy">
+  <VersionEx>10.0.0.0</VersionEx>
+  <PlatformID>{2E07F7E4-194C-4D20-B7C9-6F44A6C5A234}</PlatformID>
+  <Rules>
+    <Rule>
+      <Option>Enabled:Unsigned System Integrity Policy</Option>
+    </Rule>
+    <Rule>
+      <Option>Enabled:Audit Mode</Option>
+    </Rule>
+    <Rule>
+      <Option>Enabled:Advanced Boot Options Menu</Option>
+    </Rule>
+    <Rule>
+      <Option>Required:Enforce Store Applications</Option>
+    </Rule>
+    <Rule>
+      <Option>Enabled:UMCI</Option>
+    </Rule>
+  </Rules>
+  <!--EKUS-->
+  <EKUs />
+  <!--File Rules-->
+  <FileRules>
+    <Allow ID="ID_ALLOW_A_351_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0" FriendlyName="\\10.137.186.68\c$\PROGRAMS\UpdateOS\UPDATEOS.wim Hash Sha1" Hash="55DEB81635F307CECDA384CB122D2A103D7E01EC" />
+    <Allow ID="ID_ALLOW_A_352_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0" FriendlyName="\\10.137.186.68\c$\PROGRAMS\UpdateOS\UPDATEOS.wim Hash Sha256" Hash="B4CFB973DB91216739BF941B068A9DFC32A0DB2C155C8DF2273FF58D9BBE45F8" />
+    <Allow ID="ID_ALLOW_A_353_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0" FriendlyName="\\10.137.186.68\c$\PROGRAMS\UpdateOS\UPDATEOS.wim Hash Authenticode SIP Sha256" Hash="F495E947193FE0E91339F1AE51E507DE565AB93468039A7167A66FB3A84C7709" />
+  </FileRules>
+  <!--Signers-->
+  <Signers>
+    <Signer ID="ID_SIGNER_S_EEDD_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0" Name="Microsoft Windows Production PCA 2011">
+      <CertRoot Type="TBS" Value="4E80BE107C860DE896384B3EFF50504DC2D76AC7151DF3102A4450637A032146" />
+    </Signer>
+    <Signer ID="ID_SIGNER_S_F706_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0" Name="Symantec Class 3 SHA256 Code Signing CA">
+      <CertRoot Type="TBS" Value="A08E79C386083D875014C409C13D144E0A24386132980DF11FF59737C8489EB1" />
+    </Signer>
+    <Signer ID="ID_SIGNER_S_F7AD_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0" Name="Microsoft Testing PCA 2010">
+      <CertRoot Type="TBS" Value="CCEA4720A5D9D56ACFAA31C19D9D34FA4CC0771720A99DC8A2C7A4CF38A9DEE8" />
+    </Signer>
+    <Signer ID="ID_SIGNER_S_FB42_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0" Name="Microsoft Code Signing PCA 2010">
+      <CertRoot Type="TBS" Value="121AF4B922A74247EA49DF50DE37609CC1451A1FE06B2CB7E1E079B492BD8195" />
+    </Signer>
+    <Signer ID="ID_SIGNER_S_10185_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0" Name="Microsoft Code Signing PCA 2011">
+      <CertRoot Type="TBS" Value="F6F717A43AD9ABDDC8CEFDDE1C505462535E7D1307E630F9544A2D14FE8BF26E" />
+    </Signer>
+    <Signer ID="ID_SIGNER_S_10233_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0" Name="Microsoft Windows Phone Production PCA 2012">
+      <CertRoot Type="TBS" Value="A26156E95BF1EE57E8A410470C08525CDA7862DECBAA2629CACD57DAA5D6D6AD" />
+    </Signer>
+    <Signer ID="ID_SIGNER_S_10AB8_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0" Name="Microsoft Windows Third Party Component CA 2012">
+      <CertRoot Type="TBS" Value="CEC1AFD0E310C55C1DCC601AB8E172917706AA32FB5EAF826813547FDF02DD46" />
+    </Signer>
+    <Signer ID="ID_SIGNER_S_10C5B_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0" Name="Microsoft Code Signing PCA">
+      <CertRoot Type="TBS" Value="27543A3F7612DE2261C7228321722402F63A07DE" />
+    </Signer>
+    <Signer ID="ID_SIGNER_S_12A84_1_0_0_0_0" Name="Microsoft Corporation">
+      <CertRoot Type="TBS" Value="AC9A6FDD4332059D88BBBDB75E24666EF3E48FD784B8BB00FC5B184B0B55200F" />
+    </Signer>
+    <Signer ID="ID_SIGNER_S_12A85_1_0_0_0" Name="Windows Phone OEM HAL Extension Test Cert 2013 (TEST ONLY)">
+      <CertRoot Type="TBS" Value="1BC94BE0BFACD684EAC99139D2ADAA098C1B088B385B48AF982FF3A26E762D83" />
+    </Signer>
+    <Signer ID="ID_SIGNER_S_12A86_1_0_0" Name="Microsoft Windows PCA 2010">
+      <CertRoot Type="TBS" Value="90C9669670E75989159E6EEF69625EB6AD17CBA6209ED56F5665D55450A05212" />
+    </Signer>
+    <Signer ID="ID_SIGNER_S_12A87_1_0" Name="Microsoft Development PCA 2014">
+      <CertRoot Type="TBS" Value="2C867DFC78230D5E14EC8C5DD18420A30C8E26E5BDE32CE780325013D473944F" />
+    </Signer>
+    <Signer ID="ID_SIGNER_S_EEDB_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0" Name="Microsoft Windows Production PCA 2011">
+      <CertRoot Type="TBS" Value="4E80BE107C860DE896384B3EFF50504DC2D76AC7151DF3102A4450637A032146" />
+    </Signer>
+    <Signer ID="ID_SIGNER_S_F2D5_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0" Name="Microsoft Windows Verification PCA">
+      <CertRoot Type="TBS" Value="265E5C02BDC19AA5394C2C3041FC2BD59774F918" />
+    </Signer>
+    <Signer ID="ID_SIGNER_S_F68B_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0" Name="Microsoft Testing PCA 2010">
+      <CertRoot Type="TBS" Value="CCEA4720A5D9D56ACFAA31C19D9D34FA4CC0771720A99DC8A2C7A4CF38A9DEE8" />
+    </Signer>
+    <Signer ID="ID_SIGNER_S_F709_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0" Name="Symantec Class 3 SHA256 Code Signing CA">
+      <CertRoot Type="TBS" Value="A08E79C386083D875014C409C13D144E0A24386132980DF11FF59737C8489EB1" />
+    </Signer>
+    <Signer ID="ID_SIGNER_S_FB45_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0" Name="Microsoft Code Signing PCA 2010">
+      <CertRoot Type="TBS" Value="121AF4B922A74247EA49DF50DE37609CC1451A1FE06B2CB7E1E079B492BD8195" />
+    </Signer>
+    <Signer ID="ID_SIGNER_S_FBCE_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0" Name="Microsoft Code Signing PCA">
+      <CertRoot Type="TBS" Value="27543A3F7612DE2261C7228321722402F63A07DE" />
+    </Signer>
+    <Signer ID="ID_SIGNER_S_10189_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0" Name="Microsoft Code Signing PCA 2011">
+      <CertRoot Type="TBS" Value="F6F717A43AD9ABDDC8CEFDDE1C505462535E7D1307E630F9544A2D14FE8BF26E" />
+    </Signer>
+    <Signer ID="ID_SIGNER_S_10236_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0" Name="Microsoft Windows Phone Production PCA 2012">
+      <CertRoot Type="TBS" Value="A26156E95BF1EE57E8A410470C08525CDA7862DECBAA2629CACD57DAA5D6D6AD" />
+    </Signer>
+    <Signer ID="ID_SIGNER_S_10ABB_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0" Name="Microsoft Windows Third Party Component CA 2012">
+      <CertRoot Type="TBS" Value="CEC1AFD0E310C55C1DCC601AB8E172917706AA32FB5EAF826813547FDF02DD46" />
+    </Signer>
+    <Signer ID="ID_SIGNER_S_10CBD_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0" Name="Microsoft Code Signing PCA">
+      <CertRoot Type="TBS" Value="5095BF071B0D9976E40AE08412F4E1D241AFB58C" />
+    </Signer>
+    <Signer ID="ID_SIGNER_S_12A7B_1_0_0_0_0_0_0_0_0_0_0_0_0_0" Name="paulmon UMCI Codesigning">
+      <CertRoot Type="TBS" Value="63F582F2690DDB48DF1A8CDC66CCA5928885ECA2E68100B3DB33807B9EE8DD6D" />
+    </Signer>
+    <Signer ID="ID_SIGNER_S_12A7C_1_0_0_0_0_0_0_0_0_0_0_0_0" Name="Microsoft MarketPlace PCA 2011">
+      <CertRoot Type="TBS" Value="FC9EDE3DCCA09186B2D3BF9B738A2050CB1A554DA2DCADB55F3F72EE17721378" />
+    </Signer>
+    <Signer ID="ID_SIGNER_S_12A7E_1_0_0_0_0_0_0_0_0_0_0" Name="Windows Phone OEM App Test Cert 2013 (TEST ONLY)">
+      <CertRoot Type="TBS" Value="3A553D078CAC6BDEEFF04033C566A56B6A1DADB9CE17DB8A78A3974C28A25870" />
+    </Signer>
+    <Signer ID="ID_SIGNER_S_12A7F_1_0_0_0_0_0_0_0_0_0" Name="MSFT">
+      <CertRoot Type="TBS" Value="A59B369BBED483192489A7E54E916058DC277EBD07FE812347ED4BD8225C9F49" />
+    </Signer>
+    <Signer ID="ID_SIGNER_S_12A80_1_0_0_0_0_0_0_0_0" Name="Microsoft Windows PCA 2010">
+      <CertRoot Type="TBS" Value="90C9669670E75989159E6EEF69625EB6AD17CBA6209ED56F5665D55450A05212" />
+    </Signer>
+    <Signer ID="ID_SIGNER_S_12A81_1_0_0_0_0_0_0_0" Name="Microsoft Development PCA 2014">
+      <CertRoot Type="TBS" Value="2C867DFC78230D5E14EC8C5DD18420A30C8E26E5BDE32CE780325013D473944F" />
+    </Signer>
+    <Signer ID="ID_SIGNER_S_12A82_1_0_0_0_0_0_0" Name="Microsoft Testing Root Certificate Authority 2010">
+      <CertRoot Type="TBS" Value="7A4D9890B0F9006A6F77472D50D83CA54975FCC2B7EA0563490134E19B78782A" />
+    </Signer>
+    <Signer ID="ID_SIGNER_S_12A7A_1_0_0_0_0_0_0_0_0_0_0_0_0_0_0" Name="paulmon Lockdown Policy Authority">
+      <CertRoot Type="TBS" Value="6BF539EB7ABBD2731FD0F610E87CC20783716748E9CD6D0E989B776EFB87DEA0" />
+    </Signer>
+    <Signer ID="ID_SIGNER_S_12A88_1" Name="Microsoft Testing Root Certificate Authority 2010">
+      <CertRoot Type="TBS" Value="7A4D9890B0F9006A6F77472D50D83CA54975FCC2B7EA0563490134E19B78782A" />
+    </Signer>
+  </Signers>
+  <!--Driver Signing Scenarios-->
+  <SigningScenarios>
+    <SigningScenario Value="131" ID="ID_SIGNINGSCENARIO_DRIVERS_1" FriendlyName="Auto generated policy on 06-13-2019">
+      <ProductSigners>
+        <AllowedSigners>
+          <AllowedSigner SignerId="ID_SIGNER_S_EEDD_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0" />
+          <AllowedSigner SignerId="ID_SIGNER_S_F706_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0" />
+          <AllowedSigner SignerId="ID_SIGNER_S_F7AD_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0" />
+          <AllowedSigner SignerId="ID_SIGNER_S_FB42_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0" />
+          <AllowedSigner SignerId="ID_SIGNER_S_10185_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0" />
+          <AllowedSigner SignerId="ID_SIGNER_S_10233_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0" />
+          <AllowedSigner SignerId="ID_SIGNER_S_10AB8_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0" />
+          <AllowedSigner SignerId="ID_SIGNER_S_10C5B_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0" />
+          <AllowedSigner SignerId="ID_SIGNER_S_12A84_1_0_0_0_0" />
+          <AllowedSigner SignerId="ID_SIGNER_S_12A85_1_0_0_0" />
+          <AllowedSigner SignerId="ID_SIGNER_S_12A86_1_0_0" />
+          <AllowedSigner SignerId="ID_SIGNER_S_12A87_1_0" />
+          <AllowedSigner SignerId="ID_SIGNER_S_12A88_1" />
+        </AllowedSigners>
+      </ProductSigners>
+    </SigningScenario>
+    <SigningScenario Value="12" ID="ID_SIGNINGSCENARIO_WINDOWS" FriendlyName="Auto generated policy on 06-13-2019">
+      <ProductSigners>
+        <AllowedSigners>
+          <AllowedSigner SignerId="ID_SIGNER_S_EEDB_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0" />
+          <AllowedSigner SignerId="ID_SIGNER_S_F2D5_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0" />
+          <AllowedSigner SignerId="ID_SIGNER_S_F68B_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0" />
+          <AllowedSigner SignerId="ID_SIGNER_S_F709_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0" />
+          <AllowedSigner SignerId="ID_SIGNER_S_FB45_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0" />
+          <AllowedSigner SignerId="ID_SIGNER_S_FBCE_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0" />
+          <AllowedSigner SignerId="ID_SIGNER_S_10189_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0" />
+          <AllowedSigner SignerId="ID_SIGNER_S_10236_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0" />
+          <AllowedSigner SignerId="ID_SIGNER_S_10ABB_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0" />
+          <AllowedSigner SignerId="ID_SIGNER_S_10CBD_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0" />
+          <AllowedSigner SignerId="ID_SIGNER_S_12A7B_1_0_0_0_0_0_0_0_0_0_0_0_0_0" />
+          <AllowedSigner SignerId="ID_SIGNER_S_12A7C_1_0_0_0_0_0_0_0_0_0_0_0_0" />
+          <AllowedSigner SignerId="ID_SIGNER_S_12A7E_1_0_0_0_0_0_0_0_0_0_0" />
+          <AllowedSigner SignerId="ID_SIGNER_S_12A7F_1_0_0_0_0_0_0_0_0_0" />
+          <AllowedSigner SignerId="ID_SIGNER_S_12A80_1_0_0_0_0_0_0_0_0" />
+          <AllowedSigner SignerId="ID_SIGNER_S_12A81_1_0_0_0_0_0_0_0" />
+          <AllowedSigner SignerId="ID_SIGNER_S_12A82_1_0_0_0_0_0_0" />
+        </AllowedSigners>
+        <FileRulesRef>
+          <FileRuleRef RuleID="ID_ALLOW_A_351_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_352_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0" />
+          <FileRuleRef RuleID="ID_ALLOW_A_353_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0" />
+        </FileRulesRef>
+      </ProductSigners>
+    </SigningScenario>
+  </SigningScenarios>
+  <UpdatePolicySigners>
+    <UpdatePolicySigner SignerId="ID_SIGNER_S_12A7A_1_0_0_0_0_0_0_0_0_0_0_0_0_0_0" />
+  </UpdatePolicySigners>
+  <CiSigners>
+    <CiSigner SignerId="ID_SIGNER_S_EEDB_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0" />
+    <CiSigner SignerId="ID_SIGNER_S_F2D5_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0" />
+    <CiSigner SignerId="ID_SIGNER_S_F68B_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0" />
+    <CiSigner SignerId="ID_SIGNER_S_F709_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0" />
+    <CiSigner SignerId="ID_SIGNER_S_FB45_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0" />
+    <CiSigner SignerId="ID_SIGNER_S_FBCE_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0" />
+    <CiSigner SignerId="ID_SIGNER_S_10189_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0" />
+    <CiSigner SignerId="ID_SIGNER_S_10236_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0" />
+    <CiSigner SignerId="ID_SIGNER_S_10ABB_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0" />
+    <CiSigner SignerId="ID_SIGNER_S_10CBD_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0" />
+    <CiSigner SignerId="ID_SIGNER_S_12A7B_1_0_0_0_0_0_0_0_0_0_0_0_0_0" />
+    <CiSigner SignerId="ID_SIGNER_S_12A7C_1_0_0_0_0_0_0_0_0_0_0_0_0" />
+    <CiSigner SignerId="ID_SIGNER_S_12A7E_1_0_0_0_0_0_0_0_0_0_0" />
+    <CiSigner SignerId="ID_SIGNER_S_12A7F_1_0_0_0_0_0_0_0_0_0" />
+    <CiSigner SignerId="ID_SIGNER_S_12A80_1_0_0_0_0_0_0_0_0" />
+    <CiSigner SignerId="ID_SIGNER_S_12A81_1_0_0_0_0_0_0_0" />
+    <CiSigner SignerId="ID_SIGNER_S_12A82_1_0_0_0_0_0_0" />
+  </CiSigners>
+  <HvciOptions>0</HvciOptions>
+  <PolicyTypeID>{A244370E-44C9-4C06-B551-F6016E563076}</PolicyTypeID>
+</SiPolicy>

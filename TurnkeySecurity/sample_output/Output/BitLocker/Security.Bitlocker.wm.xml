@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<identity xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    name="BitLocker"
+    namespace="Security"
+    owner="$(OEMNAME)"
+    legacyName="$(OEMNAME).Security.BitLocker" xmlns="urn:Microsoft.CompPlat/ManifestSchema.v1.00">
+    <onecorePackageInfo
+        targetPartition="MainOS"
+        releaseType="Production"
+        ownerType="OEM" />
+    <files>
+        <file
+            destinationDir="$(runtime.bootDrive)\IoTSec"
+            source="DETask.xml" />
+        <file
+            destinationDir="$(runtime.bootDrive)\IoTSec"
+            source="setup.bitlocker.cmd" />
+    </files>
+    <regKeys>
+        <regKey
+            keyName="$(hklm.software)\Policies\Microsoft\SystemCertificates\FVE" />
+        <regKey
+            keyName="$(hklm.software)\Policies\Microsoft\SystemCertificates\FVE\Certificates" />
+        <regKey
+            keyName="$(hklm.software)\Policies\Microsoft\SystemCertificates\FVE\Certificates\E5EE060DCCE9651CD7C2038D72B7794BE9AC7DA8">
+            <regValue
+                name="Blob"
+                type="REG_BINARY"
+                value="030000000100000014000000e5ee060dcce9651cd7c2038d72b7794be9ac7da8200000000100000049040000308204453082022da003020102021039bb3452d1f5e1934ec6d49fe9eabfbe300d06092a864886f70d01010b05003026312430220603550403131b7061756c6d6f6e2050726f64756374696f6e205043412032303136301e170d3139303631323231313233355a170d3339313233313233353935395a3026312430220603550403131b7061756c6d6f6e2044617461205265636f76657279204167656e7430820122300d06092a864886f70d01010105000382010f003082010a0282010100e177ae0afe61df6565dd9a80a33ec6f5414d699735b7329d3caf1d25ad9b2584ed376fda71bd0baa75eb0b1cc43a0670660e5db4de247b7ef43b17536d342035eba4036a70e3ad432c784e7e5af48d63a23d5f98e95a96c78d123abe54de9a434ddd30667fdc4b1571f79d676f0b5b798365caf644db4b1f0c3fbe8ef7cbe2ec6aff7ae7d9b677d0e38ef12e41763214b9abfa0ded14709d58386b06da0b9ad31753d95817795f4457057901b22fe82a5bc7ae961aaec8255f0b54b1315732058a89f5fc0ee80b1a8fb17a49700b2a9193d473eebae6e8b6e64acc7727542cec6c52bb26e34b8b686e469fb3e4293daf4457f3437d5653fcc6341b337a3a5aa90203010001a36f306d300c0603551d130101ff0402300030150603551d25040e300c060a2b06010401823743010230460603551d01043f303d801073546a0f66b109f1b52cf98497de7ed2a1173015311330110603550403130a7061756c6d6f6e2043418210f79ac6fa1fb64b8b48ed7f9c88ef33f9300d06092a864886f70d01010b050003820201001d8e6a489278e12078bc82539670aa8aaa25ac3772be0f6968fcf41f2c7035450e04e15af59f7a6619ddaf457b7661db8c5d7a431740ba4bd221b5da253cd9e42c895ede11a705a01ce9c9ddee531357785360ffc7134b87846a94192aa6b85f71de616382507c7a12fc0824d03d64bff132085678c0791241753c745ce1fac2779829540da4c53f8053f1a78dbc7bb538ed624a3d97523dc6d62376a06769992928c9c0f28d8bf97f38ec3c470e72414669f8599399bf24f36bc51dc0eedb1aab95caa523f631c7b129ef16b029cd19c9f15c3eefc9708dc5eaeaf6dbd2791c44a4659afcccc3d1f2161b760e824064786a0847fb7365ceb409ac27409bcacbaa560f6923a2afe655aab4ef90afda8f17a5b9643a32f729f54bb5d68b0d41a9a2160025650ea8d01a2f78603037b443d4d3b6669320b9061214706efdf39a1a8d0e1e29f52fbf6837f2b1c29d9407a3af28f4231f5a7ddfdbd59240cdf3649b33f584c0cc31cf51514db248af5230aafbc20edccb178a43c28895822119b2b181b09a6f6d4fbaee12d1b2ee0f1b7fc634d1ad938cd0ead1a9fddcc4ffc7ef5be5eae37f148845142e0c4531dbe9abc8b0a6a9ad258af2e092b68d6bcc40994923be96336328d6773d9f946c8cd7c79ef8b3d229b0d5670b1cbc6278e2d8661659f88dc1568e13d643d3e8ef57b7d13d7138e1147529df09c38e2e975bc1a247" />
+        </regKey>
+        <regKey
+            keyName="$(hklm.software)\Policies\Microsoft\SystemCertificates\FVE\CRLs" />
+        <regKey
+            keyName="$(hklm.software)\Policies\Microsoft\SystemCertificates\FVE\CTLs" />
+        <regKey
+            keyName="$(hklm.software)\Policies\Microsoft\FVE">
+            <regValue
+                name="OSManageDRA"
+                type="REG_DWORD"
+                value="0x00000001" />
+            <regValue
+                name="FDVManageDRA"
+                type="REG_DWORD"
+                value="0x00000001" />
+            <regValue
+                name="RDVManageDRA"
+                type="REG_DWORD"
+                value="0x00000001" />
+            <regValue
+                name="IdentificationField"
+                type="REG_DWORD"
+                value="0x00000001" />
+            <regValue
+                name="IdentificationFieldString"
+                type="REG_SZ"
+                value="BitLocker" />
+            <regValue
+                name="SecondaryIdentificationField"
+                type="REG_SZ"
+                value="BitLocker" />
+            <regValue
+                name="SelfSignedCertificates"
+                type="REG_DWORD"
+                value="0x00000001" />
+            <regValue
+                name="RDVDeviceBinding"
+                type="REG_DWORD"
+                value="0x00000001" />
+            <regValue
+                name="OSEnablePrebootInputProtectorsOnSlates"
+                type="REG_DWORD"
+                value="0x00000001" />
+        </regKey>
+    </regKeys>
+</identity>
